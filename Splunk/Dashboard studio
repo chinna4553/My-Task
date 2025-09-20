@@ -1,0 +1,1894 @@
+{
+    "title": "Healthcare Dashboard Copy",
+    "description": "",
+    "inputs": {},
+    "defaults": {
+        "visualizations": {
+            "global": {
+                "showLastUpdated": false
+            }
+        }
+    },
+    "visualizations": {
+        "viz_2hzTTzmg": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 20,
+                        "value": "#6BB3EE"
+                    },
+                    {
+                        "from": 20,
+                        "to": 40,
+                        "value": "#ADCCDD"
+                    },
+                    {
+                        "from": 40,
+                        "to": 60,
+                        "value": "#EEE8CE"
+                    },
+                    {
+                        "from": 60,
+                        "to": 80,
+                        "value": "#F4BAA9"
+                    },
+                    {
+                        "from": 80,
+                        "value": "#F98C83"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_kYoaiRUv_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 10,
+                                "value": "#8AD6A5"
+                            },
+                            {
+                                "to": 10,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)",
+                "unit": "min"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_3W8Qh4eP": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_3odTWGqw": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_59bzlIVS": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_5NSEGYjN": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## 2. Number of Patients Triaged"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_76yFHLSN": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## 3. Number of Patients Admitted"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_7cwfKhEl": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_JhEHlFy5_ds_sHUvoDKE_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 50,
+                                "value": "#6AD6D7"
+                            },
+                            {
+                                "to": 50,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_8SB0fuyG": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "#6AD6D7",
+                "strokeWidth": 4
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_8ywD3E9F": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_BEDVmYSs": {
+            "options": {
+                "fillColor": "#047A7B",
+                "fillOpacity": 0.7,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.ellipse"
+        },
+        "viz_CbYhEEDI": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## Number of Patients Emergency Discharged"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_DYmwPLeL": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## 1. Number of Patients Checked In"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_E9Eq7qd9": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_Em0z8jwq": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## Number of Patients Sent to ER"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_HBndDcC8": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_HJSvzC9V": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 20,
+                        "value": "#6BB3EE"
+                    },
+                    {
+                        "from": 20,
+                        "to": 40,
+                        "value": "#ADCCDD"
+                    },
+                    {
+                        "from": 40,
+                        "to": 60,
+                        "value": "#EEE8CE"
+                    },
+                    {
+                        "from": 60,
+                        "to": 80,
+                        "value": "#F4BAA9"
+                    },
+                    {
+                        "from": 80,
+                        "value": "#F98C83"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_42O6TeFY_ds_kYoaiRUv_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 50,
+                                "value": "#D6867E"
+                            },
+                            {
+                                "to": 50,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)",
+                "unit": "min"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_HVakKuF4": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "### Average Wait Time Till Procedure"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_KZTlq8Gi": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## Avg Patient Records \nUpdated Per Hour"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_LNdm1KVi": {
+            "dataSources": {
+                "primary": "ds_52kqP7no"
+            },
+            "description": "",
+            "options": {
+                "backgroundColor": "transparent",
+                "gaugeRanges": [
+                    {
+                        "from": 90,
+                        "to": 100,
+                        "value": "#D6867E"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 0,
+                        "to": 25,
+                        "value": "#74A1D6"
+                    }
+                ],
+                "majorTickInterval": 25,
+                "orientation": "horizontal",
+                "valueDisplay": "percentage"
+            },
+            "showLastUpdated": false,
+            "showProgressBar": false,
+            "type": "splunk.markergauge"
+        },
+        "viz_Md1axvOi": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_OOessXcm": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_rE6Du7O0_ds_JhEHlFy5_ds_sHUvoDKE_ds_Ui7HgXoq"
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_QDkvLmd1": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "# **7 Day Patient Diagnostic Flow**"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_R3kE21HF": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_SJJqGe1l": {
+            "context": {
+                "trendColorEditorConfig": [
+                    {
+                        "to": 0,
+                        "value": "#F98C83"
+                    },
+                    {
+                        "from": 0,
+                        "value": "#55C169"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_Ixiq9nvV_ds_kYoaiRUv_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "deltaColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 400,
+                                "value": "#8AD6A5"
+                            },
+                            {
+                                "to": 400,
+                                "value": "#8AD6A5"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "sparklineDisplay": "off",
+                "trendColor": "> trendValue | rangeValue(trendColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_XpNIREXZ": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "#6AD6D7",
+                "strokeWidth": 4
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_Xvk0ciOV": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## Diagnostic Imaging"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_aBUxEonx": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 20,
+                        "value": "#6BB3EE"
+                    },
+                    {
+                        "from": 20,
+                        "to": 40,
+                        "value": "#ADCCDD"
+                    },
+                    {
+                        "from": 40,
+                        "to": 60,
+                        "value": "#EEE8CE"
+                    },
+                    {
+                        "from": 60,
+                        "to": 80,
+                        "value": "#F4BAA9"
+                    },
+                    {
+                        "from": 80,
+                        "value": "#F98C83"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_8wGK1wf6_ds_42O6TeFY_ds_kYoaiRUv_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 10,
+                                "value": "#6AD6D7"
+                            },
+                            {
+                                "to": 10,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)",
+                "unit": "min"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_aCIde10R": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "#1A1C20"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_avFdYK4y": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "### Average Transfer of Care Time "
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_blueArrow": {
+            "options": {
+                "preserveAspectRatio": true,
+                "src": "/static/app/splunk-dashboard-studio/images/examples-hub/healthcare_dashboard/blueArrow.png"
+            },
+            "type": "splunk.image"
+        },
+        "viz_cQnGPsZw": {
+            "dataSources": {
+                "primary": "ds_lyCjku4B"
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "showRowNumbers": true,
+                "tableFormat": {
+                    "headerBackgroundColor": "#0E6162",
+                    "headerColor": "> headerBackgroundColor | maxContrast(tableRowColorMaxContrast)",
+                    "rowBackgroundColors": "> table | seriesByIndex(0) | pick(tableRowBackgroundColorsByBackgroundColor)",
+                    "rowColors": "> rowBackgroundColors | maxContrast(tableRowColorMaxContrast)"
+                }
+            },
+            "title": "",
+            "type": "splunk.table"
+        },
+        "viz_cUg5YdJ0": {
+            "options": {
+                "fillColor": "#047A7B",
+                "fillOpacity": 0.7,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.ellipse"
+        },
+        "viz_cXQRJrZ4": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## Number of Patients Sent to Inpatient Admission"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_cpz54Osc": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## Avg Patient Records \nUpdated Per Hour"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_cwUJeEP9": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "### Total Number of Patients in Hospital"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_dqiBE1n6": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "### Average Time to Discharge "
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_eaEFX0dW": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_firstLineGroup": {
+            "options": {
+                "src": "/static/app/splunk-dashboard-studio/images/examples-hub/healthcare_dashboard/firstLineGroup.png"
+            },
+            "type": "splunk.image"
+        },
+        "viz_fourthLineGroup": {
+            "options": {
+                "preserveAspectRatio": true,
+                "src": "/static/app/splunk-dashboard-studio/images/examples-hub/healthcare_dashboard/fourthLineGroup.png"
+            },
+            "type": "splunk.image"
+        },
+        "viz_gQ9PRbrb": {
+            "options": {
+                "fillColor": "#041B24",
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.ellipse"
+        },
+        "viz_iYTg0Qkq": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_sHUvoDKE_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 100,
+                                "value": "#D6A854"
+                            },
+                            {
+                                "to": 100,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_jUaD7Fcp": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_0Rt99YYY"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 30,
+                                "value": "#D6A854"
+                            },
+                            {
+                                "to": 30,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_kef6Rli3": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_V0OUeNEF_ds_0Rt99YYY"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 100,
+                                "value": "#74A1D6"
+                            },
+                            {
+                                "to": 100,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_legend": {
+            "options": {
+                "preserveAspectRatio": true,
+                "src": "/static/app/splunk-dashboard-studio/images/examples-hub/healthcare_dashboard/legend.png"
+            },
+            "type": "splunk.image"
+        },
+        "viz_pwDsULho": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "### Percent of Hospital Capacity Filled"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_s24zF6KS": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## Clinical Exam"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_sGmWjVri": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_8Ysd2heB_ds_fN8spe8s_ds_kYoaiRUv_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 30,
+                                "value": "#6AD6D7"
+                            },
+                            {
+                                "to": 30,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_secondLineGroup": {
+            "options": {
+                "preserveAspectRatio": true,
+                "src": "/static/app/splunk-dashboard-studio/images/examples-hub/healthcare_dashboard/secondLineGroup.png"
+            },
+            "type": "splunk.image"
+        },
+        "viz_suBNfXgq": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_hPbh0anu_ds_V0OUeNEF_ds_0Rt99YYY"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 100,
+                                "value": "#6AD6D7"
+                            },
+                            {
+                                "to": 100,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_tSvyROLB": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_thirdLineGroup": {
+            "options": {
+                "preserveAspectRatio": true,
+                "src": "/static/app/splunk-dashboard-studio/images/examples-hub/healthcare_dashboard/thirdLineGroup.png"
+            },
+            "type": "splunk.image"
+        },
+        "viz_trxVvFuq": {
+            "dataSources": {
+                "primary": "ds_LIRVs8HJ"
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "showRowNumbers": true,
+                "tableFormat": {
+                    "headerBackgroundColor": "#0E6162",
+                    "headerColor": "> headerBackgroundColor | maxContrast(tableRowColorMaxContrast)",
+                    "rowBackgroundColors": "> table | pick(tableRowBackgroundColor)",
+                    "rowColors": "> rowBackgroundColors | maxContrast(tableRowColorMaxContrast)"
+                }
+            },
+            "title": "",
+            "type": "splunk.table"
+        },
+        "viz_uXuauFJh": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## PATIENT INFO SYNC"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_vPNP9DGA": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "# **7 Day Hospital Diagnostic Journey of Patients**"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_vZWZGIF5": {
+            "options": {
+                "fillColor": "#041B24",
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.ellipse"
+        },
+        "viz_w0IKVoTV": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## 4. Number of Patients Evaluated"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_wa6Tbrq0": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_4pBgG928_ds_JhEHlFy5_ds_sHUvoDKE_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 100,
+                                "value": "#8AD6A5"
+                            },
+                            {
+                                "to": 100,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        },
+        "viz_waa2Bhid": {
+            "options": {
+                "fontColor": "#ffffff",
+                "markdown": "## PATIENT INFO SYNC"
+            },
+            "type": "splunk.markdown"
+        },
+        "viz_wgHQmxHz": {
+            "options": {
+                "fillColor": "#08080A",
+                "fillOpacity": 0.7,
+                "rx": 4,
+                "strokeColor": "transparent"
+            },
+            "type": "splunk.rectangle"
+        },
+        "viz_z5YtNLx8": {
+            "context": {
+                "majorColorEditorConfig": [
+                    {
+                        "to": 25,
+                        "value": "#74A1D6"
+                    },
+                    {
+                        "from": 25,
+                        "to": 50,
+                        "value": "#6AD6D7"
+                    },
+                    {
+                        "from": 50,
+                        "to": 75,
+                        "value": "#8AD6A5"
+                    },
+                    {
+                        "from": 75,
+                        "to": 90,
+                        "value": "#D6A854"
+                    },
+                    {
+                        "from": 90,
+                        "value": "#D6867E"
+                    }
+                ]
+            },
+            "dataSources": {
+                "primary": "ds_fN8spe8s_ds_kYoaiRUv_ds_Ui7HgXoq"
+            },
+            "encoding": {
+                "majorColor": {
+                    "field": "primary[0]",
+                    "format": {
+                        "ranges": [
+                            {
+                                "from": 10,
+                                "value": "#D6867E"
+                            },
+                            {
+                                "to": 10,
+                                "value": "#5fbcff"
+                            }
+                        ],
+                        "type": "rangevalue"
+                    }
+                }
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "majorColor": "> majorValue | rangeValue(majorColorEditorConfig)"
+            },
+            "title": "",
+            "type": "splunk.singlevalue"
+        }
+    },
+    "dataSources": {
+        "ds_0Rt99YYY": {
+            "name": "Search_1",
+            "options": {
+                "query": "| makeresults \n| eval Value=\"127\" \n| table Value",
+                "queryParameters": {
+                    "earliest": "-24h@h",
+                    "latest": "now"
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_42O6TeFY_ds_kYoaiRUv_ds_Ui7HgXoq": {
+            "name": "Copy of Average Wait Time",
+            "options": {
+                "query": "| makeresults \n| eval value=\"61\" \n| table value"
+            },
+            "type": "ds.search"
+        },
+        "ds_4pBgG928_ds_JhEHlFy5_ds_sHUvoDKE_ds_Ui7HgXoq": {
+            "name": "Evaluation Time",
+            "options": {
+                "query": "| makeresults\n| eval Value=\"433\""
+            },
+            "type": "ds.search"
+        },
+        "ds_52kqP7no": {
+            "name": "Gauge",
+            "options": {
+                "query": "| makeresults \n| eval value=\"72\" \n| table value",
+                "queryParameters": {
+                    "earliest": "-24h@h",
+                    "latest": "now"
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_8Ysd2heB_ds_fN8spe8s_ds_kYoaiRUv_ds_Ui7HgXoq": {
+            "name": "Copy of Copy of Average Wait Time",
+            "options": {
+                "query": "| makeresults \n| eval value=\"34\" \n| table value"
+            },
+            "type": "ds.search"
+        },
+        "ds_8wGK1wf6_ds_42O6TeFY_ds_kYoaiRUv_ds_Ui7HgXoq": {
+            "name": "Copy of Copy of Average Wait Time",
+            "options": {
+                "query": "| makeresults \n| eval value=\"16\" \n| table value"
+            },
+            "type": "ds.search"
+        },
+        "ds_Ixiq9nvV_ds_kYoaiRUv_ds_Ui7HgXoq": {
+            "name": "Average Discharge",
+            "options": {
+                "query": "| makeresults \n| eval value=\"598\" \n| append \n    [| makeresults \n    | eval value=\"687\"] \n| table value"
+            },
+            "type": "ds.search"
+        },
+        "ds_JhEHlFy5_ds_sHUvoDKE_ds_Ui7HgXoq": {
+            "name": "Admission Time",
+            "options": {
+                "query": "| makeresults\n| eval Value=\"82\""
+            },
+            "type": "ds.search"
+        },
+        "ds_LIRVs8HJ": {
+            "name": "Diagnostic Imaging",
+            "options": {
+                "query": "| makeresults\n| eval TREATMENT = \"X Ray\"\n| eval PATIENTS = 48\n| eval AVG_EXAM_TIME = 41.3\n| append [\n| makeresults\n| eval TREATMENT = \"CT Scan\"\n| eval PATIENTS = 121\n| eval AVG_EXAM_TIME = 23.8 ]\n| append [\n| makeresults\n| eval TREATMENT = \"MRI\"\n| eval PATIENTS = 256\n| eval AVG_EXAM_TIME = 35.8 ]\n| append [\n| makeresults\n| eval TREATMENT = \"Ultrasound\"\n| eval PATIENTS = 239\n| eval AVG_EXAM_TIME = 45.8 ]\n| append [\n| makeresults\n| eval TREATMENT = \"Sonogram\"\n| eval PATIENTS = 163\n| eval AVG_EXAM_TIME = 62.2 ]\n| table TREATMENT, PATIENTS, AVG_EXAM_TIME "
+            },
+            "type": "ds.search"
+        },
+        "ds_V0OUeNEF_ds_0Rt99YYY": {
+            "name": "Copy of Search_1",
+            "options": {
+                "query": "| makeresults \n| eval Value=\"261\" \n| table Value",
+                "queryParameters": {
+                    "earliest": "-24h@h",
+                    "latest": "now"
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_fN8spe8s_ds_kYoaiRUv_ds_Ui7HgXoq": {
+            "name": "Copy of Average Wait Time",
+            "options": {
+                "query": "| makeresults \n| eval value=\"27\" \n| table value"
+            },
+            "type": "ds.search"
+        },
+        "ds_hPbh0anu_ds_V0OUeNEF_ds_0Rt99YYY": {
+            "name": "Copy of Copy of Search_1",
+            "options": {
+                "query": "| makeresults \n| eval Value=\"144\" \n| table Value",
+                "queryParameters": {
+                    "earliest": "-24h@h",
+                    "latest": "now"
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_kYoaiRUv_ds_Ui7HgXoq": {
+            "name": "Average Wait Time",
+            "options": {
+                "query": "| makeresults \n| eval value=\"25\" \n| table value"
+            },
+            "type": "ds.search"
+        },
+        "ds_lyCjku4B": {
+            "name": "Clinical Exam",
+            "options": {
+                "query": "| makeresults\n| eval TREATMENT = \"Nausea/Vomiting\"\n| eval PATIENTS = 45\n| eval AVG_EXAM_TIME = 12.9\n| append [\n| makeresults\n| eval TREATMENT = \"Fever/Headache\"\n| eval PATIENTS = 13\n| eval AVG_EXAM_TIME = 28.2 ]\n| append [\n| makeresults\n| eval TREATMENT = \"Chest Tightness\"\n| eval PATIENTS = 29\n| eval AVG_EXAM_TIME = 14.1 ]\n| append [\n| makeresults\n| eval TREATMENT = \"Suture Care\"\n| eval PATIENTS = 142\n| eval AVG_EXAM_TIME = 19.3 ]\n| append [\n| makeresults\n| eval TREATMENT = \"Eye Flush\"\n| eval PATIENTS = 17\n| eval AVG_EXAM_TIME = 28.9 ]\n| table TREATMENT, PATIENTS, AVG_EXAM_TIME",
+                "queryParameters": {
+                    "earliest": "-24h@h",
+                    "latest": "now"
+                }
+            },
+            "type": "ds.search"
+        },
+        "ds_rE6Du7O0_ds_JhEHlFy5_ds_sHUvoDKE_ds_Ui7HgXoq": {
+            "name": "Copy of Admission Time",
+            "options": {
+                "query": "| makeresults\n| eval Value=\"528\""
+            },
+            "type": "ds.search"
+        },
+        "ds_sHUvoDKE_ds_Ui7HgXoq": {
+            "name": "Triage Time",
+            "options": {
+                "query": "| makeresults\n| eval Value=\"129\""
+            },
+            "type": "ds.search"
+        }
+    },
+    "layout": {
+        "layoutDefinitions": {
+            "layout_1": {
+                "options": {
+                    "backgroundColor": "#111215",
+                    "backgroundImage": {
+                        "sizeType": "contain",
+                        "src": "/static/app/splunk-dashboard-studio/images/examples-hub/healthcare_dashboard/Background.png",
+                        "x": 0,
+                        "y": 0
+                    },
+                    "display": "auto-scale",
+                    "height": 1110,
+                    "width": 1920
+                },
+                "structure": [
+                    {
+                        "item": "viz_fourthLineGroup",
+                        "position": {
+                            "h": 410,
+                            "w": 97,
+                            "x": 1494,
+                            "y": 500
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_thirdLineGroup",
+                        "position": {
+                            "h": 430,
+                            "w": 200,
+                            "x": 1180,
+                            "y": 470
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_firstLineGroup",
+                        "position": {
+                            "h": 530,
+                            "w": 150,
+                            "x": 330,
+                            "y": 430
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_E9Eq7qd9",
+                        "position": {
+                            "h": 140,
+                            "w": 620,
+                            "x": 1270,
+                            "y": 110
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_blueArrow",
+                        "position": {
+                            "h": 110,
+                            "w": 1840,
+                            "x": 30,
+                            "y": 260
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_8SB0fuyG",
+                        "position": {
+                            "h": 290,
+                            "w": 460,
+                            "x": 760,
+                            "y": 730
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_XpNIREXZ",
+                        "position": {
+                            "h": 290,
+                            "w": 460,
+                            "x": 760,
+                            "y": 420
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_R3kE21HF",
+                        "position": {
+                            "h": 140,
+                            "w": 300,
+                            "x": 30,
+                            "y": 110
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_wgHQmxHz",
+                        "position": {
+                            "h": 140,
+                            "w": 300,
+                            "x": 340,
+                            "y": 110
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_HBndDcC8",
+                        "position": {
+                            "h": 140,
+                            "w": 300,
+                            "x": 650,
+                            "y": 110
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_Md1axvOi",
+                        "position": {
+                            "h": 140,
+                            "w": 300,
+                            "x": 960,
+                            "y": 110
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_QDkvLmd1",
+                        "position": {
+                            "h": 90,
+                            "w": 390,
+                            "x": 40,
+                            "y": 270
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_59bzlIVS",
+                        "position": {
+                            "h": 130,
+                            "w": 300,
+                            "x": 30,
+                            "y": 720
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_3odTWGqw",
+                        "position": {
+                            "h": 130,
+                            "w": 300,
+                            "x": 30,
+                            "y": 890
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_tSvyROLB",
+                        "position": {
+                            "h": 130,
+                            "w": 300,
+                            "x": 30,
+                            "y": 550
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_3W8Qh4eP",
+                        "position": {
+                            "h": 130,
+                            "w": 300,
+                            "x": 30,
+                            "y": 380
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_vPNP9DGA",
+                        "position": {
+                            "h": 80,
+                            "w": 700,
+                            "x": 30,
+                            "y": 20
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_eaEFX0dW",
+                        "position": {
+                            "h": 160,
+                            "w": 300,
+                            "x": 1590,
+                            "y": 450
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_aCIde10R",
+                        "position": {
+                            "h": 160,
+                            "w": 300,
+                            "x": 1590,
+                            "y": 640
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_8ywD3E9F",
+                        "position": {
+                            "h": 160,
+                            "w": 300,
+                            "x": 1590,
+                            "y": 830
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_DYmwPLeL",
+                        "position": {
+                            "h": 80,
+                            "w": 300,
+                            "x": 40,
+                            "y": 390
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_5NSEGYjN",
+                        "position": {
+                            "h": 70,
+                            "w": 290,
+                            "x": 40,
+                            "y": 560
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_76yFHLSN",
+                        "position": {
+                            "h": 70,
+                            "w": 280,
+                            "x": 40,
+                            "y": 730
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_w0IKVoTV",
+                        "position": {
+                            "h": 80,
+                            "w": 290,
+                            "x": 40,
+                            "y": 900
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_iYTg0Qkq",
+                        "position": {
+                            "h": 80,
+                            "w": 150,
+                            "x": 30,
+                            "y": 590
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_7cwfKhEl",
+                        "position": {
+                            "h": 80,
+                            "w": 140,
+                            "x": 30,
+                            "y": 760
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_wa6Tbrq0",
+                        "position": {
+                            "h": 80,
+                            "w": 130,
+                            "x": 50,
+                            "y": 930
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_trxVvFuq",
+                        "position": {
+                            "h": 250,
+                            "w": 460,
+                            "x": 760,
+                            "y": 470
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_cQnGPsZw",
+                        "position": {
+                            "h": 250,
+                            "w": 460,
+                            "x": 760,
+                            "y": 780
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_Xvk0ciOV",
+                        "position": {
+                            "h": 70,
+                            "w": 270,
+                            "x": 790,
+                            "y": 430
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_s24zF6KS",
+                        "position": {
+                            "h": 60,
+                            "w": 300,
+                            "x": 790,
+                            "y": 740
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_HVakKuF4",
+                        "position": {
+                            "h": 50,
+                            "w": 290,
+                            "x": 360,
+                            "y": 120
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_2hzTTzmg",
+                        "position": {
+                            "h": 120,
+                            "w": 190,
+                            "x": 320,
+                            "y": 140
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_jUaD7Fcp",
+                        "position": {
+                            "h": 90,
+                            "w": 140,
+                            "x": 1610,
+                            "y": 510
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_dqiBE1n6",
+                        "position": {
+                            "h": 50,
+                            "w": 220,
+                            "x": 670,
+                            "y": 120
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_SJJqGe1l",
+                        "position": {
+                            "h": 120,
+                            "w": 190,
+                            "x": 40,
+                            "y": 140
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_avFdYK4y",
+                        "position": {
+                            "h": 50,
+                            "w": 280,
+                            "x": 980,
+                            "y": 120
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_Em0z8jwq",
+                        "position": {
+                            "h": 70,
+                            "w": 270,
+                            "x": 1610,
+                            "y": 460
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_cXQRJrZ4",
+                        "position": {
+                            "h": 90,
+                            "w": 270,
+                            "x": 1610,
+                            "y": 650
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_CbYhEEDI",
+                        "position": {
+                            "h": 90,
+                            "w": 270,
+                            "x": 1610,
+                            "y": 840
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_kef6Rli3",
+                        "position": {
+                            "h": 90,
+                            "w": 140,
+                            "x": 1610,
+                            "y": 710
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_suBNfXgq",
+                        "position": {
+                            "h": 90,
+                            "w": 140,
+                            "x": 1610,
+                            "y": 890
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_LNdm1KVi",
+                        "position": {
+                            "h": 190,
+                            "w": 720,
+                            "x": 1220,
+                            "y": 90
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_cwUJeEP9",
+                        "position": {
+                            "h": 80,
+                            "w": 300,
+                            "x": 40,
+                            "y": 120
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_HJSvzC9V",
+                        "position": {
+                            "h": 120,
+                            "w": 190,
+                            "x": 630,
+                            "y": 140
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_aBUxEonx",
+                        "position": {
+                            "h": 120,
+                            "w": 190,
+                            "x": 940,
+                            "y": 140
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_pwDsULho",
+                        "position": {
+                            "h": 50,
+                            "w": 370,
+                            "x": 1290,
+                            "y": 120
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_vZWZGIF5",
+                        "position": {
+                            "h": 160,
+                            "w": 160,
+                            "x": 470,
+                            "y": 610
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_cUg5YdJ0",
+                        "position": {
+                            "h": 100,
+                            "w": 100,
+                            "x": 500,
+                            "y": 640
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_gQ9PRbrb",
+                        "position": {
+                            "h": 160,
+                            "w": 160,
+                            "x": 1340,
+                            "y": 610
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_BEDVmYSs",
+                        "position": {
+                            "h": 100,
+                            "w": 100,
+                            "x": 1370,
+                            "y": 640
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_z5YtNLx8",
+                        "position": {
+                            "h": 80,
+                            "w": 120,
+                            "x": 490,
+                            "y": 650
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_OOessXcm",
+                        "position": {
+                            "h": 80,
+                            "w": 190,
+                            "x": 20,
+                            "y": 420
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_uXuauFJh",
+                        "position": {
+                            "h": 80,
+                            "w": 210,
+                            "x": 460,
+                            "y": 540
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_waa2Bhid",
+                        "position": {
+                            "h": 70,
+                            "w": 200,
+                            "x": 1330,
+                            "y": 550
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_sGmWjVri",
+                        "position": {
+                            "h": 80,
+                            "w": 120,
+                            "x": 1360,
+                            "y": 650
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_cpz54Osc",
+                        "position": {
+                            "h": 90,
+                            "w": 180,
+                            "x": 470,
+                            "y": 770
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_KZTlq8Gi",
+                        "position": {
+                            "h": 90,
+                            "w": 190,
+                            "x": 1340,
+                            "y": 770
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_secondLineGroup",
+                        "position": {
+                            "h": 640,
+                            "w": 190,
+                            "x": 600,
+                            "y": 370
+                        },
+                        "type": "block"
+                    },
+                    {
+                        "item": "viz_legend",
+                        "position": {
+                            "h": 100,
+                            "w": 210,
+                            "x": 1580,
+                            "y": 340
+                        },
+                        "type": "block"
+                    }
+                ],
+                "type": "absolute"
+            }
+        },
+        "options": {
+            "showTitleAndDescription": false
+        },
+        "tabs": {
+            "items": [
+                {
+                    "label": "New tab",
+                    "layoutId": "layout_1"
+                }
+            ]
+        }
+    }
+}
