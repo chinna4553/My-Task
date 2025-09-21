@@ -1,0 +1,9 @@
+<chart>
+  <search>
+    <query>YOUR_SAVED_SEARCH_WITH_EVAL_DATE</query>
+  </search>
+  <option name="charting.chart">column</option>
+  <option name="charting.axisTitleX.visibility">collapsed</option>
+  <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+  <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+</chart>
