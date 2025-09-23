@@ -1,0 +1,1 @@
+... | eval weekday=strftime(_time, "%A") | eval color=case(weekday=="Monday", "red", weekday=="Tuesday", "blue", weekday=="Wednesday", "green", weekday=="Thursday", "yellow", weekday=="Friday", "purple", 1=1, "gray") | chart count by weekday | fields weekday, color
