@@ -1,0 +1,9 @@
+index=abc
+SERVICE_IT_ORG="*" CONFIG_ITEM_TYPE="DATABASE" EIM_TECHNOLOGY_NAME="Microsoft SQL Server"
+earliest=-56d@d latest=now
+| bin span=1w _time
+| eval week_start=strftime(_time,"%Y-%m-%d")
+| eval period=if(_time>=relative_time(now(),"-28d@d"), "latest_4w", "prev_4w")
+| stats count(FAILEDCHECK) AS ConfigDrift BY period, week_start
+| xyseries week_start period ConfigDrift
+| sort week_start
