@@ -17,3 +17,12 @@
 | search region_type=*
 
 
+| eval region=case(
+    country IN ("H","I","J","K","L","M"), "APAC",
+    country IN ("N","O","P","Q"), "MENAT"
+)
+| where (
+    $region$="APAC" AND region="APAC" AND ORG6 IN ("A","B","C")
+) OR (
+    $region$="MENAT" AND region="MENAT" AND ORG6 IN ("A","B","C","D","E","F","G")
+)
