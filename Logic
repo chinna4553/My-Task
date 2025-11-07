@@ -1,0 +1,19 @@
+| eval region=case(
+    country IN ("H","I","J","K","L","M"), "APAC",
+    country IN ("N","O","P","Q"), "MENAT",
+    true(), "OTHER"
+)
+| search (region="APAC" AND ORG6 IN ("A","B","C")) 
+        OR (region="MENAT" AND ORG6 IN ("A","B","C","D","E","F","G"))
+
+| where (country IN ("H","I","J","K","L","M") AND ORG6 IN ("A","B","C")) 
+    OR (country IN ("N","O","P","Q") AND ORG6 IN ("A","B","C","D","E","F","G"))
+
+| eval region_type=case(
+    $region$="APAC" AND country IN ("H","I","J","K","L","M") AND ORG6 IN ("A","B","C"),
+    $region$="MENAT" AND country IN ("N","O","P","Q") AND ORG6 IN ("A","B","C","D","E","F","G"),
+    true(), null()
+)
+| search region_type=*
+
+
