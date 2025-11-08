@@ -26,3 +26,15 @@
 ) OR (
     $region$="MENAT" AND region="MENAT" AND ORG6 IN ("A","B","C","D","E","F","G")
 )
+
+
+... | eval country_filter=case(
+    country="Total", "*",
+    1==1, country
+) | search country_filter="*" OR country_filter=country
+
+
+... | eval country_filter=case(
+    country="Total", "ALL_COUNTRIES",
+    1==1, country
+) | search country_filter="ALL_COUNTRIES" OR country_filter=country
