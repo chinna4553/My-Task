@@ -1,0 +1,4 @@
+<option name="charting.chart.showLabels">true</option>
+<option name="charting.chart.sliceCollapsingThreshold">0</option>
+<option name="charting.legend.placement">right</option>
+<option name="charting.data.labelStyle.overflowMode">ellipsisNone</option>
